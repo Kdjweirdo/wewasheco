@@ -6,5 +6,6 @@ class WelcomeController < ApplicationController
     end
 
     def contact 
+     @info = Info.new
     end
 end

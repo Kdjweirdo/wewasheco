@@ -1,33 +1,37 @@
-<h1> Formulaire de Contact </h1>
-<form>
-<div class="checkbox">
-  <label>
-    <input type="checkbox" value="">
-    Entreprise
-  </label>
+<div class="bloc">
+    <h1 align="center"> Formulaire de Contact </h1>
+     <div class='illustration'>
+     
+     </div>
+    <div align="center">
+        <%= form_for(@info, :html => {class: "form-horizontal ", role: "form"}) do |f| %>
+            <div class:item>
+                <%= f.label :entreprise %>
+                <%= radio_button_tag 'entreprise','particulier' %>
+            </div>
+            <div class:item>
+            <%= f.label :particulier %>
+            <%= radio_button_tag 'entreprise','particulier' %>
+            </div>
+            <div class:item>
+            <%= f.label :nom %>
+            <%= f.text_field :nom%>          
+            </div>
+            <div class:item>
+            <%= f.label :email %>
+            <%= f.text_field :email%>          
+            </div>
+            <div class:item>
+            <%= f.label :numero %>
+            <%= f.text_field :numero%>          
+            </div>
+            <div class:item>
+            <%= f.label :description %>
+            <%= f.text_field :description%>          
+            </div>
+            <button type="button" class="btn btn-info">Envoyer</button>
+        
+        <% end %>
+        
+    </div>
 </div>
-<div class="checkbox">
-  <label>
-    <input type="checkbox" value="" >
-    Particulier
-  </label>
-</div>
-<div class="form-group">
-<label for="name">Nom</label>
-<input type="nom" class="form-control" id="name" placeholder="Entrez votre nom ">
-</div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Entrez votre adresse email ">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Numero de telephone</label>
-    <input type="numero" class="form-control" id="exampleInputPassword1" placeholder="Numero">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">description</label>
-    <input type="text-area" id="description">
-  </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Envoyer</button>
-</form>
