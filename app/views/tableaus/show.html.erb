@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Entreprise:</strong>
+  <%= @tableau.entreprise %>
+</p>
+
+<p>
+  <strong>String:</strong>
+  <%= @tableau.string %>
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @tableau.nom %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @tableau.email %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @tableau.numero %>
+</p>
+
+<%= link_to 'Edit', edit_tableau_path(@tableau) %> |
+<%= link_to 'Back', tableaus_path %>

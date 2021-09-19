@@ -1,37 +1,33 @@
 <div class="bloc">
     <h1 align="center"> Formulaire de Contact </h1>
-     <div class='illustration'>
-     
-     </div>
-    <div align="center">
-        <%= form_for(@info, :html => {class: "form-horizontal ", role: "form"}) do |f| %>
-            <div class:item>
-                <%= f.label :entreprise %>
-                <%= radio_button_tag 'entreprise','particulier' %>
-            </div>
-            <div class:item>
-            <%= f.label :particulier %>
-            <%= radio_button_tag 'entreprise','particulier' %>
-            </div>
-            <div class:item>
-            <%= f.label :nom %>
-            <%= f.text_field :nom%>          
-            </div>
-            <div class:item>
-            <%= f.label :email %>
-            <%= f.text_field :email%>          
-            </div>
-            <div class:item>
-            <%= f.label :numero %>
-            <%= f.text_field :numero%>          
-            </div>
-            <div class:item>
-            <%= f.label :description %>
-            <%= f.text_field :description%>          
-            </div>
-            <button type="button" class="btn btn-info">Envoyer</button>
-        
-        <% end %>
-        
-    </div>
+        <div class="bloc" align="center">
+        <%= form_for(@tableaus, :html => {class: "form-horizontal", role: "form" }) do |f| %>
+                        <div class:item>
+                            <%= f.label :entreprise %>
+                            <%= radio_button_tag 'entreprise','particulier' %>
+                        </div>
+                        <div class:item>
+                        <%= f.label :particulier %>
+                        <%= radio_button_tag 'entreprise','particulier' %>
+                        </div>
+                        <div class:item>
+                        <%= f.label :nom %>
+                        <%= f.text_field :nom%>          
+                        </div>
+                        <div class:item>
+                        <%= f.label :email %>
+                        <%= f.text_field :email%>          
+                        </div>
+                        <div class:item>
+                        <%= f.label :numero %>
+                        <%= f.text_field :numero%>          
+                        </div>
+                        <div class:item>
+                        <%= f.label :description %>
+                        <%= f.text_field :description%>          
+                        </div>
+                        <%= f.submit class:"btn btn-success" %>
+                    <% end %>    
+        </div>    
+       
 </div>

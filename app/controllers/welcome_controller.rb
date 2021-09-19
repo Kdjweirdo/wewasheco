@@ -6,6 +6,6 @@ class WelcomeController < ApplicationController
     end
 
     def contact 
-     @info = Info.new
+     @tableaus = Tableau.new
     end
 end
