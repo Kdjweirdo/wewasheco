@@ -6,6 +6,6 @@ class WelcomeController < ApplicationController
     end
 
     def contact 
-     @tableaus = Tableau.new
+     
     end
 end

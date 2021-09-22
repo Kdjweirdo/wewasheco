@@ -1,6 +1,5 @@
-<h1>Formulaire de Contact</h1>
-
-<%= form_with model: @information ,method: :post do |form| %>
+<h1>Formulaire</h1>
+<%= form_with model: @information do |form| %>
     <div>
     <%= form.radio_button :type, 'Entreprise' %>entreprise<br />
     <%= form.radio_button :type, 'Particulier' %>particulier<br />

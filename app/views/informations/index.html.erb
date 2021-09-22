@@ -1,0 +1,22 @@
+<h1> Information </h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>Numero</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @informations.each do |information| %>
+            <tr>
+                <td><%= information.nom %></td>
+                <td><%= information.email %></td>
+                <td><%= information.telephone %></td>
+                <td><%= information.description %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
