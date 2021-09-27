@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Renseignements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entreprise</th>
+      <th>String</th>
+      <th>Particulier</th>
+      <th>String</th>
+      <th>Email</th>
+      <th>String</th>
+      <th>Numero</th>
+      <th>String</th>
+      <th>Description</th>
+      <th>Text</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @renseignements.each do |renseignement| %>
+      <tr>
+        <td><%= renseignement.entreprise %></td>
+        <td><%= renseignement.string %></td>
+        <td><%= renseignement.particulier %></td>
+        <td><%= renseignement.string %></td>
+        <td><%= renseignement.email %></td>
+        <td><%= renseignement.string %></td>
+        <td><%= renseignement.numero %></td>
+        <td><%= renseignement.string %></td>
+        <td><%= renseignement.description %></td>
+        <td><%= renseignement.text %></td>
+        <td><%= link_to 'Show', renseignement %></td>
+        <td><%= link_to 'Edit', edit_renseignement_path(renseignement) %></td>
+        <td><%= link_to 'Destroy', renseignement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Renseignement', new_renseignement_path %>

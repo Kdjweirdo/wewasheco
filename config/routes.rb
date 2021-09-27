@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :informations
+  resources :renseignements
+  resources :information
  get "welcome/home", to: "welcome#home"
 
  get 'welcome/services', to: "welcome#services"

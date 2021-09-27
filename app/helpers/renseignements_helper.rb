@@ -1,0 +1,2 @@
+module RenseignementsHelper
+end
