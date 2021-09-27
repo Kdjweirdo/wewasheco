@@ -6,6 +6,6 @@ class WelcomeController < ApplicationController
     end
 
     def contact 
-     
+     @renseignement = Renseignement.new
     end
 end
