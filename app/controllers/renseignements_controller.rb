@@ -22,6 +22,7 @@ class RenseignementsController < ApplicationController
   # POST /renseignements or /renseignements.json
   def create
     @renseignement = Renseignement.new(renseignement_params)
+    
 
     respond_to do |format|
       if @renseignement.save

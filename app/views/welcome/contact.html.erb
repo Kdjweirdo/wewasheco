@@ -1,6 +1,7 @@
-<h1>Formulaire de Contact</h1>
+<h1>Devis</h1>
 
-<%= form_for(@renseignement)  do |form| %>
+<div>
+<%= form_with model: @renseignement  do |form| %>
     <div>
     <%= form.radio_button :entreprise, 'Entreprise' %>entreprise<br />
     <%= form.radio_button :particulier, 'Particulier' %>particulier<br />
@@ -20,6 +21,7 @@
   </div>
 
   <div>
-    <%= form.submit "Envoyer"  %>
+    <%= form.submit "Envoyer" %>
   </div>
 <% end %>
+</div>
